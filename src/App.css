@@ -2,8 +2,65 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #211F1C;
 }
 
 body {
-  background: #f8f6f1;
+  background: #CECECC;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 6rem;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 2rem;
+  color:#211F1C;
+}
+
+.logo p {
+  margin: 0;
+  color: #67635D;
+  font-size: .75rem;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #211F1C;
+}
+
+.nav-links button{
+    padding:.75rem 1.5rem;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.nav-links img {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 6rem;
 }
