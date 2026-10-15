@@ -19,6 +19,21 @@ function Hero() {
                     We bring the coffee, matcha, and a moment to sip
                     and stay awhile.
                 </p>
+
+                <div className="hero-buttons">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeUuRInxARNvB_34J1NbBqRWHL4l51MJsjiUXxdrTqlhKURxw/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hero-btn-primary"
+                >
+                    Book us for your event ↗
+                </a>
+
+                <a href="#menu" className="hero-btn-secondary">
+                    Explore the menu →
+                </a>
+            </div>
                 
             </div>
 
