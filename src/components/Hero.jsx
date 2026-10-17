@@ -1,3 +1,8 @@
+import yooLogo from "../assets/images/yoo-and-yours-logo.jpg";
+import heroDrinks from "../assets/images/hero-drinks.jpg";
+import pressedFlowers from "../assets/images/pressed-flowers.png";
+import vintageLace from "../assets/images/vintage-lace.png";
+
 function Hero() {
     return (
         <section className="hero">
@@ -38,7 +43,32 @@ function Hero() {
             </div>
 
             <div className="hero-right">
+                <div className="hero-collage">
+                    <img
+                        src={vintageLace}
+                        alt=""
+                        className="hero-lace"
+                    />
 
+                    <div className="hero-polaroid">
+                    <img
+                        src={heroDrinks}
+                        alt="A cup of coffee and a cup of matcha"
+                    />
+                    </div>
+
+                    <img
+                        src={pressedFlowers}
+                        alt=""
+                        className="hero-flowers"
+                    />
+
+                    <img
+                        src={yooLogo}
+                        alt="Yoo & Yours logo"
+                        className="hero-logo"
+                    />
+                </div>
             </div>
 
         </section>
