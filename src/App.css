@@ -282,6 +282,66 @@ body {
   margin-top: 40px;
 }
 
+/*Booking Steps Styles*/
+
+.booking-steps {
+  padding: 4rem 6rem 7rem;
+  border-top: 1px solid rgba(33, 31, 28, 0.15);
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.booking-card {
+  border-top: 1px solid rgba(33, 31, 28, 0.3);
+  padding-top: 1.5rem;
+}
+
+.booking-card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.booking-card p {
+  color: #67635D;
+  line-height: 1.7;
+}
+
+.booking-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #67635D;
+  margin-bottom: 1.5rem;
+}
+
+.booking-header {
+  max-width: 650px;
+  margin-bottom: 4rem;
+}
+
+.booking-header h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+.booking-header > p:last-child {
+  color: #67635D;
+  line-height: 1.7;
+  max-width: 450px;
+}
+
+.booking-cta {
+  margin-top: 3rem;
+}
+
+/* Mobile Styling */
 @media (max-width: 768px) {
   .featured-drinks {
     padding: 4rem 1.5rem;
@@ -398,5 +458,17 @@ body {
   .nav-links button {
     white-space: nowrap;
     padding: 0.75rem 1rem;
+  }
+
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-steps {
+    padding: 4rem 1.5rem;
+  }
+
+  .booking-header h2 {
+    font-size: 2.5rem;
   }
 }
