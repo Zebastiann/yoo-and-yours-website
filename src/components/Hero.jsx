@@ -14,9 +14,8 @@ function Hero() {
                 </p>
 
                 <h1>
-                    Coffee & Matcha,
-                    <br />
-                    for yoo & yours.
+                Coffee & Matcha,<br />
+                <em>for yoo & yours.</em>
                 </h1>
 
                 <p className="hero-description">
@@ -39,6 +38,9 @@ function Hero() {
                     Explore the menu →
                 </a>
             </div>
+            <p className="hero-handwritten">
+                For celebrations, pop-ups & just-because moments.
+            </p>
                 
             </div>
 

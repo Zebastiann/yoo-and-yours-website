@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Italianno&display=swap');
+
+:root {
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-script: 'Italianno', cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
 body {
   background: #CECECC;
   color: #211F1C;
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 550;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  letter-spacing: 0.12em;
 }
 
 /* Navbar Styles */
@@ -16,12 +40,20 @@ body {
   align-items: center;
 
   padding: 2rem 6rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #CECECC;
+  border-bottom: 1px solid rgba(33, 31, 28, 0.12);
 }
 
 .logo h2 {
   margin: 0;
-  font-size: 2rem;
   color:#211F1C;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .logo p {
@@ -30,6 +62,12 @@ body {
   font-size: .75rem;
   letter-spacing: .15rem;
   text-transform: uppercase;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .nav-links {
@@ -43,15 +81,24 @@ body {
   color: #211F1C;
 }
 
-.nav-links button{
-    padding:.75rem 1.5rem;
-    background:#211F1C;
-    color:white;
-    border:none;
-    cursor:pointer;
+.nav-links a:hover {
+  opacity: 0.65;
 }
 
-.nav-links button:hover{
+.nav-links .nav-book-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #211F1C;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+}
+
+.nav-links .nav-book-btn:hover{
     background:#44413D;
 }
 
@@ -81,12 +128,17 @@ body {
 }
 
 .hero-left h1 {
+  font-family: var(--font-heading);
   font-size: clamp(3.5rem, 4.5vw, 5.5rem);
-  font-weight: 400;
+  font-weight: 450;
   line-height: 1.05;
   letter-spacing: -0.025rem;
   color:#211F1C;
   margin: 1.5rem 0 2rem;
+}
+
+.hero-left h1 em {
+  font-weight: 400;
 }
 
 .hero-description {
@@ -205,6 +257,14 @@ body {
   z-index: 4;
 }
 
+.hero-handwritten {
+  font-family: var(--font-script);
+  font-size: 2.5rem;
+  color: #514B46;
+  margin-top: 2rem;
+  line-height: 1.2;
+}
+
 /* Feated Section Styles */
 
 .featured-drinks {
@@ -222,6 +282,10 @@ body {
   font-weight: 400;
   line-height: 1.2;
   margin: 1rem 0;
+}
+
+.featured-header h2 em {
+  font-weight: 400;
 }
 
 .featured-header > p:last-child {
@@ -325,10 +389,16 @@ body {
 }
 
 .booking-header h2 {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.2;
   margin: 1rem 0;
+}
+
+.booking-header h2 em {
+  font-style: italic;
+  font-weight: 400;
 }
 
 .booking-header > p:last-child {
@@ -358,6 +428,11 @@ body {
   font-weight: 400;
   line-height: 1.2;
   margin: 1rem 0;
+}
+
+.gallery-header h2 em {
+  font-style: italic;
+  font-weight: 400;
 }
 
 .gallery-header > p:last-child {
@@ -410,6 +485,8 @@ body {
   background-color: #211F1C;
   color: #F1EEE8;
   padding: 4rem 6rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-main {
@@ -487,6 +564,7 @@ body {
 @media (max-width: 768px) {
   .featured-drinks {
     padding: 4rem 1.5rem;
+    box-sizing: border-box;
   }
 
   .featured-header h2 {
@@ -529,9 +607,12 @@ body {
   }
 
   .hero-flowers {
-    width: 30%;
-    right: 0;
-    bottom: 0;
+      width: 30%;
+      right: 5%;
+      left: auto;
+      bottom: -10px;
+      transform: rotate(8deg);
+      transform-origin: bottom center;
   }
 
   .hero-logo {
@@ -587,19 +668,28 @@ body {
   }
 
   .nav-links {
-    width: 100%;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .75rem;
   }
 
-  .nav-links a {
+  .nav-instagram {
+    margin-left: 0.5rem;
+  }
+
+  .nav-links .nav-book-btn {
+    display: none;
+  }
+
+  .hero-btn-primary {
+    padding: 0.85rem 1rem;
+    font-size: 0.8rem;
     white-space: nowrap;
   }
 
-  .nav-links button {
+  .hero-btn-secondary {
     white-space: nowrap;
-    padding: 0.75rem 1rem;
   }
 
   .booking-grid {
@@ -654,5 +744,87 @@ body {
   .footer-socials {
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
+  }
+
+  .drink-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+
+  .drink-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  }
+
+ @media (min-width: 600px) and (max-width: 768px) {
+  .drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .drink-card {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .drink-image {
+    width: 100%;
+  }
+
+  .drink-card:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1250px) {
+  .hero-flowers {
+    right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 3rem 4rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    flex: none;
+    min-width: 0;
+  }
+
+  .hero-collage {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

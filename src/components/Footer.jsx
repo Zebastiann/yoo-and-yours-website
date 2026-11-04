@@ -1,10 +1,10 @@
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer-main">
         <div className="footer-brand">
           <h2>Yoo & Yours</h2>
-          <p>Coffee, matcha & moments worth sharing.</p>
+          <p>Coffee, matcha & good company.</p>
         </div>
 
         <div className="footer-links">

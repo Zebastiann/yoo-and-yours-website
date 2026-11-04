@@ -21,7 +21,9 @@ function BookingSteps() {
     <section className="booking-steps" id="events">
       <div className="booking-header">
         <p className="eyebrow">FOR YOUR NEXT GATHERING</p>
-        <h2>A little cart, a lovely occasion.</h2>
+        <h2>
+          Something special, <em>on the menu.</em>
+        </h2>
         <p>From the first inquiry to the final pour, here's how it works.</p>
       </div>
 

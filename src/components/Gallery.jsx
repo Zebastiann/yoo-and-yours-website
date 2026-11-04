@@ -21,10 +21,11 @@ function Gallery() {
     <section className="gallery" id="gallery">
       <div className="gallery-header">
         <p className="eyebrow">THE GALLERY</p>
-        <h2>Little moments, lovingly captured.</h2>
+        <h2>
+            Scenes from <em>Yoo & Yours.</em>
+        </h2>
         <p>
-          A collection of sweet gatherings, thoughtful details,
-          and moments worth remembering.
+          A look at the drinks, details, and events that make Yoo & Yours what it is.
         </p>
       </div>
 

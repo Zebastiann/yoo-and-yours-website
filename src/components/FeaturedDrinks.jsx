@@ -10,11 +10,12 @@ function FeaturedDrinks() {
                     A LITTLE SOMETHING TO SIP
                 </p>
 
-                <h2>Made for slow moments.</h2>
+                <h2>
+                Made for <em>slow moments.</em>
+                </h2>
 
                 <p>
-                    From your first sip of matcha to your
-                    favorite afternoon coffee.
+                    From creamy matcha to rich espresso, discover a few of our favorites.
                 </p>
             </div>
 
@@ -41,7 +42,7 @@ function FeaturedDrinks() {
                     <div className="drink-info">
                         <span className="drink-number">02 / THE FAVORITES</span>
                         <h3>Café Latte</h3>
-                        <p>A little everyday ritual.</p>
+                        <p>Smooth espresso, creamy milk, pure comfort.</p>
                     </div>
                 </div>
 
